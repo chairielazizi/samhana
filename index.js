@@ -33,6 +33,10 @@ client.on("message", async (message) => {
   ];
   samResponse = ["hai, nama saya sam jugak!", "hihi mantap"];
   thanksResponse = ["sama2", "bereh boh"];
+  askResponse = [
+    "saya serahkan kepada yg lebih pakar",
+    "sabar jap eh, nanti ada orang jawab",
+  ];
   //   }
   //   if (message.author.id == "464470476391972874") {
   //     responses = choose(sorryResponse);
@@ -51,28 +55,34 @@ client.on("message", async (message) => {
     responses = choose(samResponse);
     console.log(responses);
     message.channel.send(responses);
-  } else if (message.content.includes("sori")) {
+  }
+  // else if (message.content.includes("sori".toLowerCase())) {
+  //   responses = choose(sorryResponse);
+  //   console.log(responses);
+  //   message.channel.send(responses);
+  // }
+  else if (message.content.includes("sorry".toLowerCase())) {
     responses = choose(sorryResponse);
     console.log(responses);
     message.channel.send(responses);
-  } else if (message.content.includes("sorry")) {
-    responses = choose(sorryResponse);
-    console.log(responses);
-    message.channel.send(responses);
-  } else if (message.content.includes("maseh")) {
+  } else if (message.content.includes("maseh".toLowerCase())) {
     responses = choose(thanksResponse);
     console.log(responses);
     message.channel.send(responses);
-  } else if (message.content.includes("thanks")) {
+  } else if (message.content.includes("thanks".toLowerCase())) {
     responses = choose(thanksResponse);
     console.log(responses);
     message.channel.send(responses);
-  } else if (message.content.includes("maceh")) {
+  } else if (message.content.includes("maceh".toLowerCase())) {
     responses = choose(thanksResponse);
     console.log(responses);
     message.channel.send(responses);
-  } else if (message.content.includes("terima kasih")) {
+  } else if (message.content.includes("terima kasih".toLowerCase())) {
     responses = choose(thanksResponse);
+    console.log(responses);
+    message.channel.send(responses);
+  } else if (message.content.includes("?")) {
+    responses = choose(askResponse);
     console.log(responses);
     message.channel.send(responses);
   }
