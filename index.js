@@ -65,19 +65,21 @@ client.on("message", async (message) => {
     responses = choose(sorryResponse);
     console.log(responses);
     message.channel.send(responses);
-  } else if (message.content.includes("maseh".toLowerCase())) {
+  } else if (message.content.toLowerCase().includes("maseh".toLowerCase())) {
     responses = choose(thanksResponse);
     console.log(responses);
     message.channel.send(responses);
-  } else if (message.content.includes("thanks".toLowerCase())) {
+  } else if (message.content.toLowerCase().includes("thanks".toLowerCase())) {
     responses = choose(thanksResponse);
     console.log(responses);
     message.channel.send(responses);
-  } else if (message.content.includes("maceh".toLowerCase())) {
+  } else if (message.content.toLowerCase().includes("maceh".toLowerCase())) {
     responses = choose(thanksResponse);
     console.log(responses);
     message.channel.send(responses);
-  } else if (message.content.includes("terima kasih".toLowerCase())) {
+  } else if (
+    message.content.toLowerCase().includes("terima kasih".toLowerCase())
+  ) {
     responses = choose(thanksResponse);
     console.log(responses);
     message.channel.send(responses);
