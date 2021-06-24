@@ -19,10 +19,20 @@ client.on("ready", async () => {
 
 client.on("message", async (message) => {
   //   if (message.author == client.users.cache.get("857579443966967808")) {
-  sorryResponse = ["don't be sorry, be better", "takpe, jangan buat lagi"];
+  sorryResponse = [
+    "don't be sorry, be better",
+    "takpe, jangan buat lagi",
+    "haa yelaa",
+  ];
   harithResponse = ["baikk abe!", "uii kemah la abe!", "mantap ganu kiter boh"];
-  arepResponse = ["aaa noted", "noted, thanks!", "oki baikk"];
+  arepResponse = [
+    "aaa noted",
+    "noted, thanks!",
+    "oki baikk",
+    "baik abang arep",
+  ];
   samResponse = ["hai, nama saya sam jugak!", "hihi mantap"];
+  thanksResponse = ["sama2", "bereh boh"];
   //   }
   //   if (message.author.id == "464470476391972874") {
   //     responses = choose(sorryResponse);
@@ -47,6 +57,22 @@ client.on("message", async (message) => {
     message.channel.send(responses);
   } else if (message.content.includes("sorry")) {
     responses = choose(sorryResponse);
+    console.log(responses);
+    message.channel.send(responses);
+  } else if (message.content.includes("maseh")) {
+    responses = choose(thanksResponse);
+    console.log(responses);
+    message.channel.send(responses);
+  } else if (message.content.includes("thanks")) {
+    responses = choose(thanksResponse);
+    console.log(responses);
+    message.channel.send(responses);
+  } else if (message.content.includes("maceh")) {
+    responses = choose(thanksResponse);
+    console.log(responses);
+    message.channel.send(responses);
+  } else if (message.content.includes("terima kasih")) {
+    responses = choose(thanksResponse);
     console.log(responses);
     message.channel.send(responses);
   }
