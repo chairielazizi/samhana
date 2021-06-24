@@ -61,7 +61,7 @@ client.on("message", async (message) => {
   //   console.log(responses);
   //   message.channel.send(responses);
   // }
-  else if (message.content.includes("sorry".toLowerCase())) {
+  else if (message.content.toLowerCase().includes("sorry".toLowerCase())) {
     responses = choose(sorryResponse);
     console.log(responses);
     message.channel.send(responses);
