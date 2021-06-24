@@ -2,14 +2,18 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const fetch = require("node-fetch");
 
-const config = require("./config.json");
+// const config = require("./config.json");
 
 client.on("ready", async () => {
   client.guilds.cache.forEach((guild) => {
-    if (guild == config.guild) {
+    // if (guild == config.guild) {
+    //   console.log("The client is ready");
+    //   console.log(guild);
+    // }
+    if (guild == guilds) {
       console.log("The client is ready");
+      console.log(guild);
     }
-    console.log(guild);
   });
 });
 
@@ -53,5 +57,5 @@ function choose(choices) {
   return choices[index];
 }
 
-client.login(config.token);
-// client.login(process.env.token);
+// client.login(config.token);
+client.login(process.env.token);
