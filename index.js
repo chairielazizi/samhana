@@ -10,7 +10,7 @@ client.on("ready", async () => {
     //   console.log("The client is ready");
     //   console.log(guild);
     // }
-    if (guild == guilds) {
+    if (guild == process.env.guilds) {
       console.log("The client is ready");
       console.log(guild);
     }
