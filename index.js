@@ -32,9 +32,9 @@ client.on("message", async (message) => {
     "baik abang arep",
   ];
   samResponse = ["hai, nama saya sam jugak!", "hihi mantap"];
-  thanksResponse = ["sama2", "bereh boh"];
+  thanksResponse = ["sama2", "bereh boh", "okayy baik", "orait, takdehal"];
   askResponse = [
-    "saya serahkan kepada yg lebih pakar",
+    "soalan tu saya serahkan kepada yg lebih pakar",
     "sabar jap eh, nanti ada orang jawab",
   ];
   //   }
