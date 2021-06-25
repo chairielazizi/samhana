@@ -43,25 +43,26 @@ client.on("message", async (message) => {
   //     console.log(responses);
   //     // message.channel.send(responses);
   //   } else
-  if (message.author.id == "318455938312830976") {
-    responses = choose(harithResponse);
-    console.log(responses);
-    message.channel.send(responses);
-  } else if (message.author.id == "442327114289774593") {
-    responses = choose(arepResponse);
-    console.log(responses);
-    message.channel.send(responses);
-  } else if (message.author.id == "631020384875184128") {
-    responses = choose(samResponse);
-    console.log(responses);
-    message.channel.send(responses);
-  }
-  // else if (message.content.includes("sori".toLowerCase())) {
-  //   responses = choose(sorryResponse);
+  // if (message.author.id == "318455938312830976") {
+  //   responses = choose(harithResponse);
+  //   console.log(responses);
+  //   message.channel.send(responses);
+  // } else if (message.author.id == "442327114289774593") {
+  //   responses = choose(arepResponse);
+  //   console.log(responses);
+  //   message.channel.send(responses);
+  // } else if (message.author.id == "631020384875184128") {
+  //   responses = choose(samResponse);
   //   console.log(responses);
   //   message.channel.send(responses);
   // }
-  else if (message.content.toLowerCase().includes("sorry".toLowerCase())) {
+  // // else if (message.content.includes("sori".toLowerCase())) {
+  // //   responses = choose(sorryResponse);
+  // //   console.log(responses);
+  // //   message.channel.send(responses);
+  // // }
+  // else
+  if (message.content.toLowerCase().includes("sorry".toLowerCase())) {
     responses = choose(sorryResponse);
     console.log(responses);
     message.channel.send(responses);
