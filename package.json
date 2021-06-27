@@ -4,7 +4,8 @@
   "description": "��#\u0000 \u0000s\u0000a\u0000m\u0000h\u0000a\u0000n\u0000a\u0000\r\u0000 \u0000",
   "main": "index.js",
   "dependencies": {
-    "discord.js": "^12.5.3"
+    "discord.js": "^12.5.3",
+    "node-schedule-tz": "^1.2.1-4"
   },
   "devDependencies": {},
   "scripts": {
