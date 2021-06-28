@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const fetch = require("node-fetch");
 const schedule = require("node-schedule-tz");
 
-const config = require("./config.json");
+// const config = require("./config.json");
 
 client.on("ready", async () => {
   client.guilds.cache.forEach((guild) => {
@@ -244,5 +244,5 @@ function choose(choices) {
   return choices[index];
 }
 
-client.login(config.token);
-// client.login(process.env.token);
+// client.login(config.token);
+client.login(process.env.token);
