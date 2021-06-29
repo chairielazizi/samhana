@@ -154,7 +154,8 @@ module.exports = (client) => {
       var rule = new schedule.RecurrenceRule();
       rule.hour = 00;
       rule.minute = 00;
-      // rule.tz = "MYT";
+      // https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+      rule.tz = "Asia/Kuala_Lumpur";
       var sentTime = schedule.scheduleJob(rule, function () {
         channel.send(countdownEmbed);
       });
