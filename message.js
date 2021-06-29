@@ -1,11 +1,4 @@
-const Discord = require("discord.js");
-const client = new Discord.Client();
-const fetch = require("node-fetch");
-const schedule = require("node-schedule-tz");
-
-// const config = require("./config.json");
-
-client.on("message", async (message) => {
+module.exports = async (message) => {
   //   if (message.author == client.users.cache.get("857579443966967808")) {
   sorryResponse = [
     "don't be sorry, be better",
@@ -77,14 +70,9 @@ client.on("message", async (message) => {
     console.log(responses);
     message.channel.send(responses);
   }
-});
+};
 
 function choose(choices) {
   var index = Math.floor(Math.random() * choices.length);
   return choices[index];
 }
-
-require("./files/event")(client);
-
-// client.login(config.token);
-client.login(process.env.token);
