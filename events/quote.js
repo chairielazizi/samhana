@@ -1,10 +1,15 @@
 const Discord = require("discord.js");
-const client = new Discord.Client();
+// const client = new Discord.Client();
 const fetch = require("node-fetch");
+const config = require("../config.json");
 
 module.exports = (client) => {
+  console.log("Quote loaded");
   client.guilds.cache.forEach((guild) => {
-    if (guild == process.env.guilds) {
+    console.log(guild);
+    console.log("hey");
+    if (guild == config.guild2) {
+      console.log("Ahoy Quote");
       // start to fetch the api from zenquote
       const url = "https://zenquotes.io/api/random";
       async function get(url) {

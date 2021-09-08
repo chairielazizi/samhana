@@ -84,6 +84,27 @@ function choose(choices) {
   return choices[index];
 }
 
+// fetch("https://zenquotes.io/api/random")
+//   .then((res) => res.json())
+//   .then((data) => {
+//     // data = res[0].q + res[0].a;
+//     // data = JSON.parse(this.response);
+//     console.log(data);
+//   })
+//   .catch((err) => console.log(err));
+// const url = "https://zenquotes.io/api/random";
+// async function get(url) {
+//   // Storing response
+//   const response = await fetch(url);
+
+//   // Storing data in form of JSON
+//   var data = await response.json();
+//   // console.log(data);
+//   var output = data[0].q + " -" + data[0].a + "-";
+//   console.log(output);
+//   return output;
+// }
+
 require("./files/event")(client);
 
 // client.login(config.token);
