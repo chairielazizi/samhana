@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 // const client = new Discord.Client();
 const fetch = require("node-fetch");
-const config = require("../config.json");
+// const config = require("../config.json");
 
 module.exports = (client) => {
   console.log("Quote loaded");
