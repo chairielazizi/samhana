@@ -140,20 +140,20 @@ module.exports = (client) => {
         var channel = client.channels.cache.get("884971720262443089");
         quote = await get(url);
         channel.send(quote);
-      }, "28800000");
+      }, "86400000");
 
-      fetch("https://zenquotes.io/api/random")
-        .then((res) => res.json())
-        .then((data) => {
-          // data = res[0].q + res[0].a;
-          // data = JSON.parse(this.response);
-          console.log(data);
-          var output = data[0].q + " -" + data[0].a + "-";
-          console.log(output);
-          var channel = client.channels.cache.get("884971720262443089");
-          channel.send(output);
-        })
-        .catch((err) => console.log(err));
+      // fetch("https://zenquotes.io/api/random")
+      //   .then((res) => res.json())
+      //   .then((data) => {
+      //     // data = res[0].q + res[0].a;
+      //     // data = JSON.parse(this.response);
+      //     console.log(data);
+      //     var output = data[0].q + " -" + data[0].a + "-";
+      //     console.log(output);
+      //     var channel = client.channels.cache.get("884971720262443089");
+      //     channel.send(output);
+      //   })
+      //   .catch((err) => console.log(err));
 
       //   var date = new Date();
 
